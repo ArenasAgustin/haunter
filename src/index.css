@@ -144,18 +144,6 @@ body,
   filter: var(--custom-border);
 }
 
-.haunter::before {
-  position: absolute;
-  content: "";
-  display: block;
-  width: 100%;
-  height: 100%;
-  background: var(--haunter-shadow-color);
-  clip-path: var(--haunter-shape);
-  transform: translate(0, 10px);
-  animation: haunterShadowFly 2.25s infinite alternate ease-in-out;
-}
-
 .body {
   width: 100%;
   height: 100%;
@@ -263,23 +251,10 @@ body,
   width: 100px;
   height: 75px;
   animation: haunterLeftClawsFly 2s infinite alternate ease-in-out;
-  filter: var(--custom-border-claw);
 }
 
 .claw.right {
   animation: haunterRightClawsFly 2s infinite alternate ease-in-out;
-}
-
-.claw::before {
-  position: absolute;
-  z-index: -5;
-  content: "";
-  display: block;
-  width: 90%;
-  height: 90%;
-  background: var(--haunter-shadow-color);
-  transform: translate(0, 5px) scale(1.3, 1.3);
-  clip-path: var(--haunter-claw-shadow-shape);
 }
 
 .nails {
